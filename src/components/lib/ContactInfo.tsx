@@ -17,7 +17,7 @@ const ContactInfo = () => {
 };
 
 const Link = ({ children, href }: { children: string, href: string }) => (
-    <NextLink style={{ color: 'blue' }} href={href}>{children}</NextLink>
+    <NextLink className='underline hover:text-[#1F6B38] active:text-[#1F6B38]' href={href}>{children}</NextLink>
 );
 Link.displayName = 'Link';
 
