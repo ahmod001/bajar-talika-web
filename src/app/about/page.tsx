@@ -4,11 +4,11 @@ import React from 'react';
 
 const About = () => {
     return (
-        <main>
+        <main className='bg-[#f9fafb] min-h-screen'>
             <Content.PageTitle>
                 About
             </Content.PageTitle>
-            <section className='p-5'>
+            <section className='p-3.5'>
                 <section className='container mx-auto md:text-lg '>
 
                     <Content.Block>
