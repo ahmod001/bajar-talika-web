@@ -97,11 +97,11 @@ export default function Home() {
                     </div>
 
                     {/* Value Proposition */}
-                    <div className="mt-10 text-center">
-                        <div className="inline-flex items-center bg-[#D6EFD8] px-8 py-5 rounded-full shadow-sm">
-                            <FaCheck className="text-2xl text-[#1F6B38] mr-3" />
+                    <div className="mt-10 text-center ">
+                        <div className="inline-flex items-center bg-[#D6EFD8] sm:p-5 p-3 rounded-full shadow-sm gap-3">
+                            <FaCheck className="text-2xl text-[#1F6B38]" />
                             <p className="md:text-lg font-semibold text-[#1F2937]">
-                                <span className="text-[#1F6B38] font-bold">100% Free</span> - No ads, no subscriptions
+                                <span className="text-[#1F6B38] font-bold">100% Free</span> - No ads, No subscriptions
                             </p>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram, FaEnvelope,  FaFileAlt, FaCookie, FaShoppingBasket, FaCheck, FaDownload } from 'react-icons/fa';
+import { FaFacebook, FaEnvelope,  FaFileAlt, FaCookie,  FaCheck, FaDownload } from 'react-icons/fa';
 import { MdOutlinePrivacyTip, MdInfoOutline } from 'react-icons/md';
 import { Logo } from '../shared/Logo';
 
