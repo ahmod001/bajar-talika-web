@@ -1,17 +1,16 @@
 import React from 'react';
-import { Logo } from './ui/Logo';
+import { Logo } from '../../shared/Logo';
 import { Title } from './ui/Title';
 import { Slogan } from './ui/Slogun';
 import { ShortDescription } from './ui/ShortDesc';
 import DownloadLinks from '../../shared/download-links/DownloadLinks';
-import logo from '@/assets/logo/logo_without-title.png';
 
 
 const Content = () => {
     return (
         <div className="lg:w-1/2 space-y-6 text-center lg:text-start ">
             <div className="flex items-center justify-center lg:justify-start  text-shadow-lg">
-                <Logo src={logo} alt="বাজার তালিকা - Shopping List" />
+                <Logo />
                 <Title>বাজার তালিকা</Title>
             </div>
 
@@ -24,7 +23,7 @@ const Content = () => {
                 </ShortDescription>
             </div>
 
-            <DownloadLinks />
+            <DownloadLinks className='justify-center lg:justify-start ' />
 
         </div>
     );

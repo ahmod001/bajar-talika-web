@@ -2,9 +2,9 @@ import React from 'react';
 import { DownloadButton } from './ui/DownloadButton';
 import { ThirdPartyDownload } from './ui/ThirdPartyDownload';
 
-const DownloadLinks = () => {
+const DownloadLinks = ({ className }: { className?: string }) => {
     return (
-        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+        <div className={`flex flex-col sm:flex-row gap-4 pt-2 ${className}`}>
             <DownloadButton href="#download">Download Now</DownloadButton>
 
             <div className="flex gap-4">
