@@ -4,7 +4,7 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
     return (
-        <main className='bg-[#f9fafb] min-h-screen'>
+        <main className='min-h-screen bg-white'>
             <Content.PageTitle>
                 Privacy Policy
             </Content.PageTitle>
