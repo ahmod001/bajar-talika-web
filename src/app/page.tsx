@@ -1,17 +1,15 @@
-import Link from "next/link";
+import HomePage from "@/features/home/HomePage";
 
 const Page = () => {
     return (
-        <div className="container mx-auto p-3.5">
-            <Link href={'/privacy-policy'}>
-                Privacy Policy
-            </Link>
-            <br />
-            <Link href={'/about'}>
-                About
-            </Link>
-        </div>
+        <HomePage />
     );
 };
+
+export const metadata = {
+    title: 'বাজার তালিকা - Shopping List',
+    description: 'তালিকা বানান স্মার্ট অ্যাপে, বাজার করুন নিশ্চিন্ত মনে!',
+};
+
 
 export default Page;

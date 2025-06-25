@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
   output: 'export',
   // basePath: '/bajar-talika-web',
   // assetPrefix: '/bajar-talika-web',
-  // images: {
-  //   unoptimized: true,
-  // }
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
