@@ -11,7 +11,7 @@ const Content = () => {
         <div className="lg:w-1/2 space-y-6 text-center lg:text-start ">
             <div className="flex items-center justify-center lg:justify-start  text-shadow-lg">
                 <Logo />
-                <Title>বাজার তালিকা</Title>
+                <Title>Bazar Talika</Title>
             </div>
 
             <div className="space-y-4  text-shadow-lg">

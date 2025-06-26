@@ -18,6 +18,6 @@ export const DownloadButton = ({
     {...props}
   >
     {icon}
-    <span>{children}</span>
+    <span className='text-nowrap'>{children}</span>
   </Link>
 );

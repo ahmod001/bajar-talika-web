@@ -15,9 +15,9 @@ export const Footer = () => {
                     <div className="space-y-4">
                         <div className="flex items-center gap-1">
                             <Logo size={30}/>
-                            <span className="ml-2 text-xl font-bold">বাজার তালিকা</span>
+                            <span className="ml-2 text-xl font-bold">Bazar Talika</span>
                         </div>
-                        <p className="text-[#D1D5DB] text-sm leading-relaxed">
+                        <p className="text-[#D1D5DB]  leading-relaxed">
                                 তালিকা বানান স্মার্ট অ্যাপে, <br /> বাজার করুন নিশ্চিন্ত মনে!
                         </p>
                         {/* <div className="flex space-x-4 pt-2">

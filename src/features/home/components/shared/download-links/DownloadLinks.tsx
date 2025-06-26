@@ -5,7 +5,7 @@ import { ThirdPartyDownload } from './ui/ThirdPartyDownload';
 const DownloadLinks = ({ className }: { className?: string }) => {
     return (
         <div className={`flex flex-col sm:flex-row gap-4 pt-2 ${className}`}>
-            <DownloadButton href="#download">Download Now</DownloadButton>
+            <DownloadButton href="#download">অ্যাপ ডাউনলোড করুন</DownloadButton>
 
             <div className="flex gap-4">
                 <ThirdPartyDownload
