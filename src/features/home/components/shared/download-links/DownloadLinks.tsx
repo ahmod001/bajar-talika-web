@@ -1,27 +1,22 @@
 import React from 'react';
 import { DownloadButton } from './ui/DownloadButton';
 import { ThirdPartyDownload } from './ui/ThirdPartyDownload';
-
+import apkpure from '../../../assets/app-stores/apkpure.png'
+import uptodown from '../../../assets/app-stores/uptodown.png'
 const DownloadLinks = ({ className }: { className?: string }) => {
     return (
-        <div className={`flex flex-col sm:flex-row gap-4 pt-2 ${className}`}>
+        <div className={`flex flex-col lg:flex-row gap-4 pt-2  ${className}`}>
             <DownloadButton href="#download">অ্যাপ ডাউনলোড করুন</DownloadButton>
 
-            <div className="flex gap-4">
-                <ThirdPartyDownload
+            <div className="flex justify-center gap-4 hidden" >
+                <ThirdPartyDownload disabled
                     href="https://apkpure.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    APKPure
-                </ThirdPartyDownload>
-                <ThirdPartyDownload
+                    backgroundImgUrl={apkpure.src}
+
+                />
+                <ThirdPartyDownload disabled
                     href="https://uptodown.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Uptodown
-                </ThirdPartyDownload>
+                    backgroundImgUrl={uptodown.src} />
             </div>
         </div>
     );

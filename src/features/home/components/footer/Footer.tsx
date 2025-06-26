@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { FaFacebook, FaEnvelope,  FaFileAlt, FaCookie,  FaCheck, FaDownload } from 'react-icons/fa';
+import { FaFacebook, FaEnvelope, FaFileAlt, FaCookie, FaCheck, FaDownload } from 'react-icons/fa';
 import { MdOutlinePrivacyTip, MdInfoOutline } from 'react-icons/md';
 import { Logo } from '../shared/Logo';
 
-export const Footer = () => {
-    const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
+export const Footer = () => {
     return (
         <footer className="bg-[#1F2937] text-white pt-12 pb-8 px-4 md:px-8 lg:px-16 border-t border-[#374151]">
             <div className="container mx-auto max-w-7xl">
@@ -14,42 +14,31 @@ export const Footer = () => {
                     {/* App Info */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-1">
-                            <Logo size={30}/>
+                            <Logo size={30} />
                             <span className="ml-2 text-xl font-bold">Bazar Talika</span>
                         </div>
-                        <p className="text-[#D1D5DB]  leading-relaxed">
-                                তালিকা বানান স্মার্ট অ্যাপে, <br /> বাজার করুন নিশ্চিন্ত মনে!
+                        <p className="text-[#D1D5DB] leading-relaxed">
+                            তালিকা বানান স্মার্ট অ্যাপে, <br /> বাজার করুন নিশ্চিন্ত মনে!
                         </p>
-                        {/* <div className="flex space-x-4 pt-2">
-                            <Link href="#" className="text-[#9CA3AF] hover:text-[#1F6B38] transition-colors">
-                                <FaFacebook className="text-xl" />
-                            </Link>
-                            <Link href="#" className="text-[#9CA3AF] hover:text-[#1F6B38] transition-colors">
-                                <FaTwitter className="text-xl" />
-                            </Link>
-                            <Link href="#" className="text-[#9CA3AF] hover:text-[#1F6B38] transition-colors">
-                                <FaInstagram className="text-xl" />
-                            </Link>
-                        </div> */}
                     </div>
 
                     {/* Quick Links */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+                        <h3 className="text-lg font-semibold text-white">দ্রুত লিংক</h3>
                         <ul className="space-y-3">
                             <li>
                                 <Link href="#features" className="flex items-center text-[#D1D5DB] hover:text-white transition-colors">
-                                    <FaCheck className="mr-2 text-xs text-[#1F6B38]" /> Features
+                                    <FaCheck className="mr-2 text-xs text-[#1F6B38]" /> ফিচারসমূহ
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#download" className="flex items-center text-[#D1D5DB] hover:text-white transition-colors">
-                                    <FaDownload className="mr-2 text-xs text-[#1F6B38]" /> Download
+                                    <FaDownload className="mr-2 text-xs text-[#1F6B38]" /> ডাউনলোড
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="opacity-50 flex items-center text-[#D1D5DB] hover:text-white transition-colors">
-                                    <MdInfoOutline className="mr-2 text-xs text-[#1F6B38]" /> FAQ
+                                    <MdInfoOutline className="mr-2 text-xs text-[#1F6B38]" /> প্রশ্নোত্তর
                                 </Link>
                             </li>
                         </ul>
@@ -57,22 +46,21 @@ export const Footer = () => {
 
                     {/* Legal */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white">Legal</h3>
+                        <h3 className="text-lg font-semibold text-white">গুরুত্বপূর্ণ</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/privacy-policy" className="flex items-center  text-[#D1D5DB] hover:text-white transition-colors">
-                                    <MdOutlinePrivacyTip className="mr-2 text-xs text-[#1F6B38]" /> Privacy Policy
+                                <Link href="/privacy-policy" className="flex items-center text-[#D1D5DB] hover:text-white transition-colors">
+                                    <MdOutlinePrivacyTip className="mr-2 text-xs text-[#1F6B38]" /> প্রাইভেসি পলিসি
                                 </Link>
-                            </li>
-                            <li >
-                                <Link href="#" className="opacity-50 flex items-center text-[#D1D5DB] hover:text-white transition-colors">
-                                    <FaFileAlt className="mr-2 text-xs text-[#1F6B38]" /> Terms of Service
-                                </Link>
-
                             </li>
                             <li>
-                                <Link href="#" className="opacity-50 flex items-center text-[#D1D5DB] hover:text-white transition-colors" >
-                                    <FaCookie className="mr-2 text-xs text-[#1F6B38]" /> Cookie Policy
+                                <Link href="#" className="opacity-50 flex items-center text-[#D1D5DB] hover:text-white transition-colors">
+                                    <FaFileAlt className="mr-2 text-xs text-[#1F6B38]" /> ব্যবহারের শর্তাবলী
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className="opacity-50 flex items-center text-[#D1D5DB] hover:text-white transition-colors">
+                                    <FaCookie className="mr-2 text-xs text-[#1F6B38]" /> কুকি পলিসি
                                 </Link>
                             </li>
                         </ul>
@@ -80,7 +68,7 @@ export const Footer = () => {
 
                     {/* Contact */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+                        <h3 className="text-lg font-semibold text-white">যোগাযোগ</h3>
                         <ul className="space-y-3">
                             <li className="flex items-center text-[#D1D5DB]">
                                 <FaEnvelope className="mr-2 text-xs text-[#1F6B38]" />
@@ -88,11 +76,10 @@ export const Footer = () => {
                                     hasan.webdev1@gmail.com
                                 </Link>
                             </li>
-
                             <li className="flex items-center text-[#D1D5DB]">
                                 <FaFacebook className="mr-2 text-xs text-[#1F6B38]" />
                                 <Link href="https://facebook.com/freelanceDeveloperHasan" target="_blank" className="hover:text-white transition-colors">
-                                    Facebook
+                                    ফেসবুক
                                 </Link>
                             </li>
                         </ul>
@@ -103,22 +90,20 @@ export const Footer = () => {
                 <div className="border-t border-[#374151] pt-8 flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
                         <p className="text-[#9CA3AF] text-sm">
-                            &copy; {currentYear} Bazar Talika. All rights reserved.
+                            কপিরাইট &copy; {currentYear} বাজার তালিকা | সর্বস্বত্ব সংরক্ষিত
                         </p>
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                         <Link href="/about" className="text-[#9CA3AF] hover:text-white transition-colors text-sm flex items-center">
-                            <MdInfoOutline className="mr-1" /> About Us
+                            <MdInfoOutline className="mr-1" /> অ্যাপ সম্পর্কে
                         </Link>
                         <Link href="#" className="opacity-50 text-[#9CA3AF] hover:text-white transition-colors text-sm">
-                            Blog
+                            ব্লগ
                         </Link>
-                        
                     </div>
                 </div>
             </div>
         </footer>
     );
 };
-

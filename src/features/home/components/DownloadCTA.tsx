@@ -26,12 +26,11 @@ const DownloadCTA = () => {
 const Title = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-2xl sm:text-3xl font-bold mb-6">{children}</h2>
 );
-Title.displayName = 'DownloadCTA.Title';
+Title.displayName = 'Title';
 
-// Sub-component: Description
 const Description = ({ children }: { children: React.ReactNode }) => (
     <p className="text-lg mb-8 max-w-2xl mx-auto">{children}</p>
 );
-Description.displayName = 'DownloadCTA.Description';
+Description.displayName = 'Description';
 
 export default DownloadCTA;

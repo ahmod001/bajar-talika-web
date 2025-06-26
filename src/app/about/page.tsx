@@ -12,7 +12,7 @@ const About = () => {
                 <section className='container mx-auto md:text-lg '>
 
                     <Content.Block>
-                        App Name: বাজার তালিকা - Shopping List <br />
+                        App Name: Bazar Talika - Shopping List <br />
                         Developer: Ahmod Hasan
                     </Content.Block>
 

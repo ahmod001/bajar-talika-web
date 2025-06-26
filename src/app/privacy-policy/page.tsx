@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
 
                     <Content.Block>
                         Effective Date: June 21, 2025 <br />
-                        App Name: বাজার তালিকা - Shopping List <br />
+                        App Name: Bazar Talika - Shopping List <br />
                         Developer: Ahmod Hasan
                     </Content.Block>
 

@@ -1,6 +1,5 @@
 import { FaCheck, FaListAlt, FaShareAlt, FaMobileAlt } from 'react-icons/fa';
 import { Hero } from './components/Hero/Hero';
-import DownloadLinks from './components/shared/download-links/DownloadLinks';
 import { Footer } from './components/footer/Footer';
 import DownloadCTA from './components/DownloadCTA';
 
