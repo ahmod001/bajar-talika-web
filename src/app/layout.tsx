@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: '/',
-    title: 'বাজার তালিকা - আপনার স্মার্ট শপিং সহকারী',
+    title: 'বাজার তালিকা - Shopping List ',
     description: 'বাজারে কী কিনবেন ভুলে যাবেন না! ফ্রি অ্যাপে তালিকা তৈরি করুন',
     siteName: 'Bazar Talika',
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   // Twitter/X Meta Tags
   twitter: {
     card: 'summary_large_image',
-    title: 'বাজার তালিকা - আপনার স্মার্ট শপিং সহকারী',
+    title: 'বাজার তালিকা - Shopping List ',
     description: 'বাজারে কী কিনবেন ভুলে যাবেন না! ফ্রি অ্যাপে তালিকা তৈরি করুন',
     images: [
       {

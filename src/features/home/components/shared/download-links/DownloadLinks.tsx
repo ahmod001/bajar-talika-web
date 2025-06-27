@@ -3,6 +3,8 @@ import { DownloadButton } from './ui/DownloadButton';
 import { ThirdPartyDownload } from './ui/ThirdPartyDownload';
 import apkpure from '../../../assets/app-stores/apkpure.png'
 import uptodown from '../../../assets/app-stores/uptodown.png'
+
+
 const DownloadLinks = ({ className }: { className?: string }) => {
     return (
         <div className={`flex flex-col lg:flex-row gap-4 pt-2  ${className}`}>
