@@ -14,7 +14,7 @@ export const DownloadButton = ({
   ...props 
 }: DownloadButtonProps) => (
   <Link
-    className={`bg-white hover:bg-gray-50 text-[#144B26] font-bold py-4 px-8 rounded-lg text-center transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg  ${className}`}
+    className={`bg-white hover:bg-gray-50 active:opacity-90 text-[#144B26] font-bold py-4 px-8 rounded-lg text-center transition-all duration-300 flex items-center justify-center shadow-md  ${className}`}
     {...props}
   >
     {icon}
