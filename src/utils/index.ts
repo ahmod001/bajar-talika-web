@@ -1,4 +1,4 @@
 
-export function env(key: string, defaultValue: boolean | number | string) {
+export function env<T>(key: string, defaultValue: T) {
     return process.env[key] || defaultValue
 }

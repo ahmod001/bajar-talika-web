@@ -6,10 +6,5 @@ const Page = () => {
     );
 };
 
-export const metadata = {
-    title: 'Bazar Talika - Shopping List',
-    description: 'তালিকা বানান স্মার্ট অ্যাপে, বাজার করুন নিশ্চিন্ত মনে!',
-};
-
 
 export default Page;

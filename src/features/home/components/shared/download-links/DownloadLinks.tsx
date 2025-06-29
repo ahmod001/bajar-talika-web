@@ -6,9 +6,10 @@ import uptodown from '../../../assets/app-stores/uptodown.png'
 
 
 const DownloadLinks = ({ className }: { className?: string }) => {
+
     return (
         <div className={`flex flex-col lg:flex-row gap-4 pt-2  ${className}`}>
-            <DownloadButton download href="/bazar talika - Shopping List 1.1.0.apk">অ্যাপ ডাউনলোড করুন</DownloadButton>
+            <DownloadButton href="/api/download-app" >অ্যাপ ডাউনলোড করুন</DownloadButton>
 
             <div className="flex justify-center gap-4 hidden" >
                 <ThirdPartyDownload disabled
