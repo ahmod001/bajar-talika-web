@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="bn" className={`${hindSiliguri.variable}`}>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );
