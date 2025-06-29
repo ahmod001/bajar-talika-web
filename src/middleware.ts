@@ -32,7 +32,8 @@ export function middleware(request: NextRequest) {
         return NextResponse.next();
     }
     return NextResponse.json(
-        { status: 'failed', code: 401, message: 'Unauthorized: api_key is not valid or missing', },
+        // { status: 'failed', code: 401, message: 'Unauthorized: api_key is not valid or missing', },
+        { status: 'failed', code: 401, message: APP_BASE_URL, },
         { status: 401 }
     );
 
