@@ -1,14 +1,14 @@
+import { info } from '@/constants/app.info';
 import { NextResponse } from 'next/server';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { info } from '../../../../public/app/app.info';
 
 export const GET = async () => {
     try {
 
         const fileName = `${info.app_name} ${info.app_version}.apk`;
 
-        const filePath = path.join(process.cwd(), 'public', 'app/app.apk');
+        const filePath = path.join(process.cwd(), 'public', 'app.apk');
 
         const fileBuffer = await fs.readFile(filePath);
 
