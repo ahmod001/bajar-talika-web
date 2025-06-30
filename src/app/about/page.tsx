@@ -50,6 +50,8 @@ export default About;
 
 
 export const metadata = {
-    title: 'About',
-    description: 'Learn more about বাজার তালিকা:Shopping List app, its purpose, and how it works.',
+    title: 'About | বাজার তালিকা - Shopping List',
+    description: `    This app was built to help users easily create and manage their shopping lists —
+                        from groceries to clothing or anything else they plan to buy from the market.
+                        Simple, fast, and completely offline.`,
 };

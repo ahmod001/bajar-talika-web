@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-
+import { appBaseUrl } from '@/utils'
 
 
 const hindSiliguri = Hind_Siliguri({
@@ -29,7 +29,7 @@ export default function RootLayout({
 export const metadata: Metadata = {
   title: 'বাজার তালিকা অ্যাপ - সহজে বাজার করুন, তালিকা তৈরি করুন | Bazar Talika',
   description: 'আপনার দৈনন্দিন বাজারের তালিকা তৈরি করুন এবং নিশ্চিন্তে বাজার করুন। সম্পূর্ণ ফ্রি বাংলা শপিং লিস্ট অ্যাপ',
-  metadataBase: new URL('https://ahmod001.github.io/bajar-talika-web'),
+  metadataBase: new URL(appBaseUrl()),
 
   // OpenGraph (Facebook) Meta Tags
   openGraph: {

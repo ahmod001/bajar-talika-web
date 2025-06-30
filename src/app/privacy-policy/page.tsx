@@ -75,6 +75,9 @@ export default PrivacyPolicy;
 
 
 export const metadata = {
-    title: 'Privacy Policy',
-    description: 'Learn about the privacy practices of বাজার তালিকা:Shopping List app.',
+    title: 'Privacy Policy | বাজার তালিকা - Shopping List',
+    description: `This Privacy Policy explains how your information is handled when you use the
+                        বাজার তালিকা - Shopping List mobile application. We respect your privacy —
+                        and here's the good news: This app does not collect, store, or share any
+                        personal data.`,
 };
