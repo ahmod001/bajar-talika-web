@@ -1,5 +1,5 @@
 export const info = {
-    app_version: "1.1.0",
+    app_version: "1.2.0",
 
     app_name: 'Bazar talika - Shopping List',
     developer: 'Ahmod Hasan',
