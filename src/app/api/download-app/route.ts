@@ -1,4 +1,4 @@
-import { info } from '@/constants/app.info';
+import { info } from '@/constants/app-info';
 import { NextResponse } from 'next/server';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';

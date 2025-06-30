@@ -23,7 +23,7 @@ export const ThirdPartyDownload = ({
       className={`
         rounded-lg block
         transition-all duration-200 
-        shadow-sm hover:shadow-md  bg-contain bg-white bg-center bg-no-repeat sm:w-32 w-1/2  h-14
+        shadow-sm hover:shadow-md  bg-contain bg-white bg-center bg-no-repeat lg:w-32 w-1/2  h-14
         ${disabled ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}
         ${className}
       `}

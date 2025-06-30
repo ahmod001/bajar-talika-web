@@ -3,7 +3,7 @@ import { DownloadButton } from './ui/DownloadButton';
 import { ThirdPartyDownload } from './ui/ThirdPartyDownload';
 import apkpure from '../../../assets/app-stores/apkpure.png'
 import uptodown from '../../../assets/app-stores/uptodown.png'
-import { info } from '@/constants/app.info';
+import { info } from '@/constants/app-info';
 
 
 const DownloadLinks = ({ className }: { className?: string }) => {
@@ -11,7 +11,7 @@ const DownloadLinks = ({ className }: { className?: string }) => {
 
     return (
         <div className={`flex flex-col lg:flex-row gap-4 pt-2  ${className}`}>
-            <DownloadButton href="/app.apk" download={fileName} >অ্যাপ ডাউনলোড করুন</DownloadButton>
+            <DownloadButton href="/app.apk" download={fileName}>অ্যাপ ডাউনলোড করুন <span className=' font-normal'>v{info.app_version}</span></DownloadButton>
 
             <div className="flex justify-center gap-4 hidden" >
                 <ThirdPartyDownload disabled
