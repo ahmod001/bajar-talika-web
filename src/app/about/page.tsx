@@ -1,5 +1,6 @@
 import Content from '@/components/content';
 import ContactInfo from '@/components/lib/ContactInfo';
+import { info } from '@/constants/app-info';
 import React from 'react';
 
 const About = () => {
@@ -12,8 +13,9 @@ const About = () => {
                 <section className='container mx-auto md:text-lg '>
 
                     <Content.Block>
-                        App Name: Bazar Talika - Shopping List <br />
-                        Developer: Ahmod Hasan
+                        App Name: {info.app_name} <br />
+                        Version: {info.app_version}<br />
+                        Developer: {info.developer}
                     </Content.Block>
 
                     <Content.Title>

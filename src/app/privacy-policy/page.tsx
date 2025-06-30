@@ -1,5 +1,6 @@
 import Content from '@/components/content';
 import ContactInfo from '@/components/lib/ContactInfo';
+import { info } from '@/constants/app-info';
 import React from 'react';
 
 const PrivacyPolicy = () => {
@@ -13,9 +14,9 @@ const PrivacyPolicy = () => {
                 <section className='container mx-auto md:text-lg '>
 
                     <Content.Block>
-                        Effective Date: June 21, 2025 <br />
-                        App Name: Bazar Talika - Shopping List <br />
-                        Developer: Ahmod Hasan
+                        App Name: {info.app_name} <br />
+                        Version: {info.app_version}<br />
+                        Developer: {info.developer}
                     </Content.Block>
 
                     <Content.Title>
@@ -23,7 +24,7 @@ const PrivacyPolicy = () => {
                     </Content.Title>
                     <Content.Block>
                         This Privacy Policy explains how your information is handled when you use the
-                        <span className='font-semibold'>বাজার তালিকা:Shopping List</span> mobile application. We respect your privacy —
+                        <span className='font-semibold'>{info.app_name}</span> mobile application. We respect your privacy —
                         and {"here's"} the good news: This app does not collect, store, or share any
                         personal data.
                     </Content.Block>
