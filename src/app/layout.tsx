@@ -3,6 +3,8 @@ import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { appBaseUrl } from '@/utils'
+import Navbar from "@/components/navbar/Navbar";
+import Providers from "@/Providers";
 
 
 const hindSiliguri = Hind_Siliguri({
@@ -19,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="bn" className={`${hindSiliguri.variable}`}>
       <body>
-        {children}
-        <Analytics />
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
