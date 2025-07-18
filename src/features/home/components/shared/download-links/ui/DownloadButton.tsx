@@ -1,23 +1,26 @@
-// components/ui/DownloadButton.tsx
-import Link from 'next/link';
+"use client"
 import { FaDownload } from 'react-icons/fa';
-import { ComponentProps } from 'react';
+import { Button, ButtonProps } from '@heroui/react'; // Import ButtonProps
+import React from 'react'; // Import React for React.ReactNode
 
-type DownloadButtonProps = ComponentProps<typeof Link> & {
+// Extend HeroUI's ButtonProps directly
+type DownloadButtonProps = ButtonProps & {
   icon?: React.ReactNode;
 };
 
-export const DownloadButton = ({ 
-  children, 
-  icon = <FaDownload className="mr-3 text-lg" />,
+export const DownloadButton = ({
+  children,
+  icon = <FaDownload className="text-lg" />,
   className = '',
   ...props 
-}: DownloadButtonProps) => (
-  <Link
-    className={`bg-white hover:bg-gray-50 active:opacity-90 text-[#144B26] font-bold py-4 px-8 rounded-lg text-center transition-all duration-300 flex items-center justify-center shadow-md  ${className}`}
-    {...props}
-  >
-    {icon}
-    <span className='text-nowrap'>{children}</span>
-  </Link>
-);
+}: DownloadButtonProps) => {
+  return (
+    <Button
+      startContent={icon}
+      className={`bg-white hover:bg-gray-50 active:opacity-90 text-[#144B26] font-bold py-6 min-w-64 rounded-lg text-center shadow-md ${className}`}
+      {...props} 
+    >
+      <span className='text-nowrap'>{children}</span>
+    </Button>
+  );
+};
