@@ -1,9 +1,8 @@
 "use client"
 import { FaDownload } from 'react-icons/fa';
-import { Button, ButtonProps } from '@heroui/react'; // Import ButtonProps
-import React from 'react'; // Import React for React.ReactNode
+import { Button, ButtonProps } from '@heroui/react'; 
+import React from 'react'; 
 
-// Extend HeroUI's ButtonProps directly
 type DownloadButtonProps = ButtonProps & {
   icon?: React.ReactNode;
 };

@@ -19,8 +19,9 @@ const DownloadLinks = ({ className }: { className?: string }) => {
         <div className={`flex flex-col lg:flex-row gap-4 pt-2  ${className}`}>
             <DownloadButton onPress={onDownload} disabled={isPending}>
                 {
-                    isPending ? ('ডাউনলোড হচ্ছে...')
-                        : (<>ডাউনলোড করুন <span className=' font-normal'>v{info.app_version}</span></>)
+                    !isPending ? (<>ডাউনলোড করুন <span className=' font-normal'>v{info.app_version}</span></>)
+                        : ('ডাউনলোড হচ্ছে...')
+
 
                 }
 

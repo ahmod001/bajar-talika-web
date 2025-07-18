@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react";
 
 
 const Background = ({ children, bg }: { bg: StaticImport } & PropsWithChildren) => (
-    <div className="relative overflow-hidden h-fit">
+    <div className="relative overflow-hidden h-fit  select-none">
         <Image
             src={bg}
             alt="Background image for shopping list app hero section"
