@@ -4,8 +4,8 @@ import logo from '@/assets/logo/logo_without-title.png';
 const Brand = () => {
     return (
         <header className="flex items-center gap-x-2">
-            <Logo size={33} />
-            <h3 className="font-bold text-inherit text-lg">Bazar Talika</h3>
+            <Logo size={34} />
+            <h3 className="font-bold text-inherit text-xl">Bazar Talika</h3>
         </header>
     );
 };

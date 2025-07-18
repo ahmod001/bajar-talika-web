@@ -1,13 +1,18 @@
 import Content from './content/Content';
 import Mockup from './mockup/Mockup';
+import bg from '../../assets/image.png'; // Your background image asset
+import Background from './Background';
+
 export const Hero = () => {
-    
     return (
-        <section className="px-4 pt-8 pb-16 md:pt-16  text-white" style={{ background: 'radial-gradient(circle at top, #144B26, #7BAD88)' }}>
-            <div className="container  mx-auto flex flex-col lg:flex-row items-center gap-y-14">
-                <Content />
-                <Mockup />
-            </div>
-        </section>
+        <Background bg={bg}>
+            <section className="px-4 pt-8 pb-8 text-white h-full flex items-center justify-center">
+
+                <div className="container mx-auto flex flex-col lg:flex-row items-center gap-14">
+                    <Content />
+                    <Mockup />
+                </div>
+            </section>
+        </Background>
     );
 };
